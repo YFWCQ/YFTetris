@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E8DFF2E1E23820200E9277F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DFF2D1E23820200E9277F /* AppDelegate.swift */; };
+		5E8DFF301E23820200E9277F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DFF2F1E23820200E9277F /* ViewController.swift */; };
+		5E8DFF331E23820200E9277F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8DFF311E23820200E9277F /* Main.storyboard */; };
+		5E8DFF361E23820200E9277F /* YFTetris.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DFF341E23820200E9277F /* YFTetris.xcdatamodeld */; };
+		5E8DFF381E23820200E9277F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8DFF371E23820200E9277F /* Assets.xcassets */; };
+		5E8DFF3B1E23820200E9277F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8DFF391E23820200E9277F /* LaunchScreen.storyboard */; };
+		5E8DFF461E23820200E9277F /* YFTetrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DFF451E23820200E9277F /* YFTetrisTests.swift */; };
+		5E8DFF511E23820200E9277F /* YFTetrisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DFF501E23820200E9277F /* YFTetrisUITests.swift */; };
+		5E8DFF631E23846C00E9277F /* YFTetrisSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DFF621E23846C00E9277F /* YFTetrisSceneView.swift */; };
+		5E9D0DA31E24DF9B00C7DD20 /* YFTetrisMovingSceneHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0DA21E24DF9B00C7DD20 /* YFTetrisMovingSceneHandle.swift */; };
+		5E9D0DA51E24DFAC00C7DD20 /* YFTetrisSceneDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0DA41E24DFAC00C7DD20 /* YFTetrisSceneDataModel.swift */; };
+		5E9D0DA71E24E79500C7DD20 /* YFTetrisMovingSceneDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0DA61E24E79500C7DD20 /* YFTetrisMovingSceneDataModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E8DFF421E23820200E9277F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E8DFF221E23820200E9277F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E8DFF291E23820200E9277F;
+			remoteInfo = YFTetris;
+		};
+		5E8DFF4D1E23820200E9277F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E8DFF221E23820200E9277F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E8DFF291E23820200E9277F;
+			remoteInfo = YFTetris;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E8DFF2A1E23820200E9277F /* YFTetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFTetris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8DFF2D1E23820200E9277F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E8DFF2F1E23820200E9277F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E8DFF321E23820200E9277F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E8DFF351E23820200E9277F /* YFTetris.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YFTetris.xcdatamodel; sourceTree = "<group>"; };
+		5E8DFF371E23820200E9277F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E8DFF3A1E23820200E9277F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E8DFF3C1E23820200E9277F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8DFF411E23820200E9277F /* YFTetrisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFTetrisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8DFF451E23820200E9277F /* YFTetrisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFTetrisTests.swift; sourceTree = "<group>"; };
+		5E8DFF471E23820200E9277F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8DFF4C1E23820200E9277F /* YFTetrisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFTetrisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8DFF501E23820200E9277F /* YFTetrisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFTetrisUITests.swift; sourceTree = "<group>"; };
+		5E8DFF521E23820200E9277F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8DFF621E23846C00E9277F /* YFTetrisSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTetrisSceneView.swift; sourceTree = "<group>"; };
+		5E9D0DA21E24DF9B00C7DD20 /* YFTetrisMovingSceneHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTetrisMovingSceneHandle.swift; sourceTree = "<group>"; };
+		5E9D0DA41E24DFAC00C7DD20 /* YFTetrisSceneDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTetrisSceneDataModel.swift; sourceTree = "<group>"; };
+		5E9D0DA61E24E79500C7DD20 /* YFTetrisMovingSceneDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTetrisMovingSceneDataModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E8DFF271E23820200E9277F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E8DFF3E1E23820200E9277F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E8DFF491E23820200E9277F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E8DFF211E23820200E9277F = {
+			isa = PBXGroup;
+			children = (
+				5E8DFF2C1E23820200E9277F /* YFTetris */,
+				5E8DFF441E23820200E9277F /* YFTetrisTests */,
+				5E8DFF4F1E23820200E9277F /* YFTetrisUITests */,
+				5E8DFF2B1E23820200E9277F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E8DFF2B1E23820200E9277F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E8DFF2A1E23820200E9277F /* YFTetris.app */,
+				5E8DFF411E23820200E9277F /* YFTetrisTests.xctest */,
+				5E8DFF4C1E23820200E9277F /* YFTetrisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E8DFF2C1E23820200E9277F /* YFTetris */ = {
+			isa = PBXGroup;
+			children = (
+				5E8DFF5E1E23826200E9277F /* Tetris */,
+				5E8DFF2D1E23820200E9277F /* AppDelegate.swift */,
+				5E8DFF2F1E23820200E9277F /* ViewController.swift */,
+				5E8DFF311E23820200E9277F /* Main.storyboard */,
+				5E8DFF371E23820200E9277F /* Assets.xcassets */,
+				5E8DFF391E23820200E9277F /* LaunchScreen.storyboard */,
+				5E8DFF3C1E23820200E9277F /* Info.plist */,
+				5E8DFF341E23820200E9277F /* YFTetris.xcdatamodeld */,
+			);
+			path = YFTetris;
+			sourceTree = "<group>";
+		};
+		5E8DFF441E23820200E9277F /* YFTetrisTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E8DFF451E23820200E9277F /* YFTetrisTests.swift */,
+				5E8DFF471E23820200E9277F /* Info.plist */,
+			);
+			path = YFTetrisTests;
+			sourceTree = "<group>";
+		};
+		5E8DFF4F1E23820200E9277F /* YFTetrisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E8DFF501E23820200E9277F /* YFTetrisUITests.swift */,
+				5E8DFF521E23820200E9277F /* Info.plist */,
+			);
+			path = YFTetrisUITests;
+			sourceTree = "<group>";
+		};
+		5E8DFF5E1E23826200E9277F /* Tetris */ = {
+			isa = PBXGroup;
+			children = (
+				5E8DFF5F1E23826200E9277F /* TetrisView */,
+			);
+			path = Tetris;
+			sourceTree = "<group>";
+		};
+		5E8DFF5F1E23826200E9277F /* TetrisView */ = {
+			isa = PBXGroup;
+			children = (
+				5E8DFF621E23846C00E9277F /* YFTetrisSceneView.swift */,
+				5E9D0DA21E24DF9B00C7DD20 /* YFTetrisMovingSceneHandle.swift */,
+				5E9D0DA41E24DFAC00C7DD20 /* YFTetrisSceneDataModel.swift */,
+				5E9D0DA61E24E79500C7DD20 /* YFTetrisMovingSceneDataModel.swift */,
+			);
+			path = TetrisView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E8DFF291E23820200E9277F /* YFTetris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E8DFF551E23820200E9277F /* Build configuration list for PBXNativeTarget "YFTetris" */;
+			buildPhases = (
+				5E8DFF261E23820200E9277F /* Sources */,
+				5E8DFF271E23820200E9277F /* Frameworks */,
+				5E8DFF281E23820200E9277F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YFTetris;
+			productName = YFTetris;
+			productReference = 5E8DFF2A1E23820200E9277F /* YFTetris.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E8DFF401E23820200E9277F /* YFTetrisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E8DFF581E23820200E9277F /* Build configuration list for PBXNativeTarget "YFTetrisTests" */;
+			buildPhases = (
+				5E8DFF3D1E23820200E9277F /* Sources */,
+				5E8DFF3E1E23820200E9277F /* Frameworks */,
+				5E8DFF3F1E23820200E9277F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E8DFF431E23820200E9277F /* PBXTargetDependency */,
+			);
+			name = YFTetrisTests;
+			productName = YFTetrisTests;
+			productReference = 5E8DFF411E23820200E9277F /* YFTetrisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5E8DFF4B1E23820200E9277F /* YFTetrisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E8DFF5B1E23820200E9277F /* Build configuration list for PBXNativeTarget "YFTetrisUITests" */;
+			buildPhases = (
+				5E8DFF481E23820200E9277F /* Sources */,
+				5E8DFF491E23820200E9277F /* Frameworks */,
+				5E8DFF4A1E23820200E9277F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E8DFF4E1E23820200E9277F /* PBXTargetDependency */,
+			);
+			name = YFTetrisUITests;
+			productName = YFTetrisUITests;
+			productReference = 5E8DFF4C1E23820200E9277F /* YFTetrisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E8DFF221E23820200E9277F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = YFWCQ;
+				TargetAttributes = {
+					5E8DFF291E23820200E9277F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BHJQ8TDB9V;
+						ProvisioningStyle = Automatic;
+					};
+					5E8DFF401E23820200E9277F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BHJQ8TDB9V;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5E8DFF291E23820200E9277F;
+					};
+					5E8DFF4B1E23820200E9277F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BHJQ8TDB9V;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5E8DFF291E23820200E9277F;
+					};
+				};
+			};
+			buildConfigurationList = 5E8DFF251E23820200E9277F /* Build configuration list for PBXProject "YFTetris" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E8DFF211E23820200E9277F;
+			productRefGroup = 5E8DFF2B1E23820200E9277F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E8DFF291E23820200E9277F /* YFTetris */,
+				5E8DFF401E23820200E9277F /* YFTetrisTests */,
+				5E8DFF4B1E23820200E9277F /* YFTetrisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E8DFF281E23820200E9277F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E8DFF3B1E23820200E9277F /* LaunchScreen.storyboard in Resources */,
+				5E8DFF381E23820200E9277F /* Assets.xcassets in Resources */,
+				5E8DFF331E23820200E9277F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E8DFF3F1E23820200E9277F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E8DFF4A1E23820200E9277F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E8DFF261E23820200E9277F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9D0DA31E24DF9B00C7DD20 /* YFTetrisMovingSceneHandle.swift in Sources */,
+				5E9D0DA51E24DFAC00C7DD20 /* YFTetrisSceneDataModel.swift in Sources */,
+				5E8DFF631E23846C00E9277F /* YFTetrisSceneView.swift in Sources */,
+				5E8DFF301E23820200E9277F /* ViewController.swift in Sources */,
+				5E9D0DA71E24E79500C7DD20 /* YFTetrisMovingSceneDataModel.swift in Sources */,
+				5E8DFF2E1E23820200E9277F /* AppDelegate.swift in Sources */,
+				5E8DFF361E23820200E9277F /* YFTetris.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E8DFF3D1E23820200E9277F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E8DFF461E23820200E9277F /* YFTetrisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E8DFF481E23820200E9277F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E8DFF511E23820200E9277F /* YFTetrisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E8DFF431E23820200E9277F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E8DFF291E23820200E9277F /* YFTetris */;
+			targetProxy = 5E8DFF421E23820200E9277F /* PBXContainerItemProxy */;
+		};
+		5E8DFF4E1E23820200E9277F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E8DFF291E23820200E9277F /* YFTetris */;
+			targetProxy = 5E8DFF4D1E23820200E9277F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E8DFF311E23820200E9277F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E8DFF321E23820200E9277F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E8DFF391E23820200E9277F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E8DFF3A1E23820200E9277F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E8DFF531E23820200E9277F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E8DFF541E23820200E9277F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E8DFF561E23820200E9277F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BHJQ8TDB9V;
+				INFOPLIST_FILE = YFTetris/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-31.YFTetris";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5E8DFF571E23820200E9277F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BHJQ8TDB9V;
+				INFOPLIST_FILE = YFTetris/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-31.YFTetris";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5E8DFF591E23820200E9277F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BHJQ8TDB9V;
+				INFOPLIST_FILE = YFTetrisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-31.YFTetrisTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YFTetris.app/YFTetris";
+			};
+			name = Debug;
+		};
+		5E8DFF5A1E23820200E9277F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BHJQ8TDB9V;
+				INFOPLIST_FILE = YFTetrisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-31.YFTetrisTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YFTetris.app/YFTetris";
+			};
+			name = Release;
+		};
+		5E8DFF5C1E23820200E9277F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BHJQ8TDB9V;
+				INFOPLIST_FILE = YFTetrisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-31.YFTetrisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = YFTetris;
+			};
+			name = Debug;
+		};
+		5E8DFF5D1E23820200E9277F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BHJQ8TDB9V;
+				INFOPLIST_FILE = YFTetrisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-31.YFTetrisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = YFTetris;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E8DFF251E23820200E9277F /* Build configuration list for PBXProject "YFTetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E8DFF531E23820200E9277F /* Debug */,
+				5E8DFF541E23820200E9277F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E8DFF551E23820200E9277F /* Build configuration list for PBXNativeTarget "YFTetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E8DFF561E23820200E9277F /* Debug */,
+				5E8DFF571E23820200E9277F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E8DFF581E23820200E9277F /* Build configuration list for PBXNativeTarget "YFTetrisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E8DFF591E23820200E9277F /* Debug */,
+				5E8DFF5A1E23820200E9277F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E8DFF5B1E23820200E9277F /* Build configuration list for PBXNativeTarget "YFTetrisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E8DFF5C1E23820200E9277F /* Debug */,
+				5E8DFF5D1E23820200E9277F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5E8DFF341E23820200E9277F /* YFTetris.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5E8DFF351E23820200E9277F /* YFTetris.xcdatamodel */,
+			);
+			currentVersion = 5E8DFF351E23820200E9277F /* YFTetris.xcdatamodel */;
+			path = YFTetris.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5E8DFF221E23820200E9277F /* Project object */;
+}
