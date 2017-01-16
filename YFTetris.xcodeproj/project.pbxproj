@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E2305221E2725B000EB7FC1 /* YFTetrisMovingSceneDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E23051F1E2725B000EB7FC1 /* YFTetrisMovingSceneDataModel.swift */; };
+		5E2305231E2725B000EB7FC1 /* YFTetrisMovingSceneHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2305201E2725B000EB7FC1 /* YFTetrisMovingSceneHandle.swift */; };
+		5E2305241E2725B000EB7FC1 /* YFTetrisSceneDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2305211E2725B000EB7FC1 /* YFTetrisSceneDataModel.swift */; };
+		5E2305271E2725DB00EB7FC1 /* YFTetrisCubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2305261E2725DB00EB7FC1 /* YFTetrisCubeView.swift */; };
+		5E23052A1E27603000EB7FC1 /* ExtensionTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2305291E27603000EB7FC1 /* ExtensionTimer.swift */; };
 		5E8DFF2E1E23820200E9277F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DFF2D1E23820200E9277F /* AppDelegate.swift */; };
 		5E8DFF301E23820200E9277F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DFF2F1E23820200E9277F /* ViewController.swift */; };
 		5E8DFF331E23820200E9277F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8DFF311E23820200E9277F /* Main.storyboard */; };
@@ -16,9 +21,6 @@
 		5E8DFF461E23820200E9277F /* YFTetrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DFF451E23820200E9277F /* YFTetrisTests.swift */; };
 		5E8DFF511E23820200E9277F /* YFTetrisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DFF501E23820200E9277F /* YFTetrisUITests.swift */; };
 		5E8DFF631E23846C00E9277F /* YFTetrisSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DFF621E23846C00E9277F /* YFTetrisSceneView.swift */; };
-		5E9D0DA31E24DF9B00C7DD20 /* YFTetrisMovingSceneHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0DA21E24DF9B00C7DD20 /* YFTetrisMovingSceneHandle.swift */; };
-		5E9D0DA51E24DFAC00C7DD20 /* YFTetrisSceneDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0DA41E24DFAC00C7DD20 /* YFTetrisSceneDataModel.swift */; };
-		5E9D0DA71E24E79500C7DD20 /* YFTetrisMovingSceneDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0DA61E24E79500C7DD20 /* YFTetrisMovingSceneDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E23051F1E2725B000EB7FC1 /* YFTetrisMovingSceneDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTetrisMovingSceneDataModel.swift; sourceTree = "<group>"; };
+		5E2305201E2725B000EB7FC1 /* YFTetrisMovingSceneHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTetrisMovingSceneHandle.swift; sourceTree = "<group>"; };
+		5E2305211E2725B000EB7FC1 /* YFTetrisSceneDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTetrisSceneDataModel.swift; sourceTree = "<group>"; };
+		5E2305261E2725DB00EB7FC1 /* YFTetrisCubeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTetrisCubeView.swift; sourceTree = "<group>"; };
+		5E2305291E27603000EB7FC1 /* ExtensionTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionTimer.swift; sourceTree = "<group>"; };
 		5E8DFF2A1E23820200E9277F /* YFTetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFTetris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8DFF2D1E23820200E9277F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E8DFF2F1E23820200E9277F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,9 +61,6 @@
 		5E8DFF501E23820200E9277F /* YFTetrisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFTetrisUITests.swift; sourceTree = "<group>"; };
 		5E8DFF521E23820200E9277F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E8DFF621E23846C00E9277F /* YFTetrisSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTetrisSceneView.swift; sourceTree = "<group>"; };
-		5E9D0DA21E24DF9B00C7DD20 /* YFTetrisMovingSceneHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTetrisMovingSceneHandle.swift; sourceTree = "<group>"; };
-		5E9D0DA41E24DFAC00C7DD20 /* YFTetrisSceneDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTetrisSceneDataModel.swift; sourceTree = "<group>"; };
-		5E9D0DA61E24E79500C7DD20 /* YFTetrisMovingSceneDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTetrisMovingSceneDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E23051E1E2725B000EB7FC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E23051F1E2725B000EB7FC1 /* YFTetrisMovingSceneDataModel.swift */,
+				5E2305201E2725B000EB7FC1 /* YFTetrisMovingSceneHandle.swift */,
+				5E2305211E2725B000EB7FC1 /* YFTetrisSceneDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E2305251E2725B300EB7FC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E2305261E2725DB00EB7FC1 /* YFTetrisCubeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E2305281E27600300EB7FC1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5E2305291E27603000EB7FC1 /* ExtensionTimer.swift */,
+			);
+			name = Extension;
+			path = Tetris/Extension;
+			sourceTree = "<group>";
+		};
 		5E8DFF211E23820200E9277F = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +138,7 @@
 		5E8DFF2C1E23820200E9277F /* YFTetris */ = {
 			isa = PBXGroup;
 			children = (
+				5E2305281E27600300EB7FC1 /* Extension */,
 				5E8DFF5E1E23826200E9277F /* Tetris */,
 				5E8DFF2D1E23820200E9277F /* AppDelegate.swift */,
 				5E8DFF2F1E23820200E9277F /* ViewController.swift */,
@@ -148,10 +180,9 @@
 		5E8DFF5F1E23826200E9277F /* TetrisView */ = {
 			isa = PBXGroup;
 			children = (
+				5E2305251E2725B300EB7FC1 /* View */,
+				5E23051E1E2725B000EB7FC1 /* Model */,
 				5E8DFF621E23846C00E9277F /* YFTetrisSceneView.swift */,
-				5E9D0DA21E24DF9B00C7DD20 /* YFTetrisMovingSceneHandle.swift */,
-				5E9D0DA41E24DFAC00C7DD20 /* YFTetrisSceneDataModel.swift */,
-				5E9D0DA61E24E79500C7DD20 /* YFTetrisMovingSceneDataModel.swift */,
 			);
 			path = TetrisView;
 			sourceTree = "<group>";
@@ -293,11 +324,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E9D0DA31E24DF9B00C7DD20 /* YFTetrisMovingSceneHandle.swift in Sources */,
-				5E9D0DA51E24DFAC00C7DD20 /* YFTetrisSceneDataModel.swift in Sources */,
+				5E2305231E2725B000EB7FC1 /* YFTetrisMovingSceneHandle.swift in Sources */,
+				5E23052A1E27603000EB7FC1 /* ExtensionTimer.swift in Sources */,
+				5E2305241E2725B000EB7FC1 /* YFTetrisSceneDataModel.swift in Sources */,
+				5E2305221E2725B000EB7FC1 /* YFTetrisMovingSceneDataModel.swift in Sources */,
 				5E8DFF631E23846C00E9277F /* YFTetrisSceneView.swift in Sources */,
 				5E8DFF301E23820200E9277F /* ViewController.swift in Sources */,
-				5E9D0DA71E24E79500C7DD20 /* YFTetrisMovingSceneDataModel.swift in Sources */,
+				5E2305271E2725DB00EB7FC1 /* YFTetrisCubeView.swift in Sources */,
 				5E8DFF2E1E23820200E9277F /* AppDelegate.swift in Sources */,
 				5E8DFF361E23820200E9277F /* YFTetris.xcdatamodeld in Sources */,
 			);

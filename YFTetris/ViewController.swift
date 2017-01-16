@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        secenvView = YFTetrisSceneView(frame: CGRect(x: 20, y: 20, width: self.view.frame.size.width - 40, height: self.view.frame.size.height - 40))
+        secenvView = YFTetrisSceneView(frame: CGRect(x: 20, y: 20, width: self.view.frame.size.width - 40, height: self.view.frame.size.height - 80))
         secenvView.creatSecenView()
         self.view.addSubview(secenvView)
         
@@ -23,5 +23,8 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func actionBegin(_ sender: Any) {
+        secenvView.beginGame()
+    }
 }
 
