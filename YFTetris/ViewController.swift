@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         secenvView = YFTetrisSceneView(frame: CGRect(x: 20, y: 20, width: self.view.frame.size.width - 40, height: self.view.frame.size.height - 80))
+        secenvView.column = 15
+        secenvView.row = 25
         secenvView.creatSecenView()
         self.view.addSubview(secenvView)
         

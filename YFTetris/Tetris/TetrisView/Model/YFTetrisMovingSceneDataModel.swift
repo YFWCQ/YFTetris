@@ -24,7 +24,7 @@ class YFTetrisMovingSceneDataModel: NSObject {
     var dataArray:[YFTetrisMovingSceneModel] = []
     var dataViewArray:[YFTetrisCubeView] = []
     
-    // 四个方格的正方形
+    //MARK: 四个方格的正方形
     func creatFourCube() {
         dataArray.removeAll()
         for i in 0..<4 {
@@ -32,9 +32,44 @@ class YFTetrisMovingSceneDataModel: NSObject {
             dataArray.append(model)
         }
     }
+    //MARK: I
+    func creatICube() {
+        dataArray.removeAll()
+        for i in 0..<4 {
+            let model = YFTetrisMovingSceneModel(x: beginXX , y: -4 + i)
+            dataArray.append(model)
+        }
+    }
+    //MARK: L
+    func creatLCube() {
+        dataArray.removeAll()
+        for i in 0..<2 {
+            let model = YFTetrisMovingSceneModel(x: beginXX + i % 2, y: -3 + i / 2)
+            dataArray.append(model)
+        }
+        
+        let model3 = YFTetrisMovingSceneModel(x: beginXX + 3 % 2, y: -3 + 3 / 2)
+        dataArray.append(model3)
+        
+        let model4 = YFTetrisMovingSceneModel(x: beginXX + 5 % 2, y: -3 + 5 / 2)
+        dataArray.append(model4)
+        
+    }
+
     
     func createArcStyle(){
-     self.creatFourCube()
+        
+        let arcIntNum = arc4random() % 3
+        
+        if arcIntNum == 0 {
+            self.creatFourCube()
+        }else if arcIntNum == 1
+        {
+            self.creatLCube()
+        }else
+        {
+            self.creatICube()
+        }
     }
     func removeAllModel(){
         self.dataArray.removeAll()

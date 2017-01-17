@@ -15,8 +15,8 @@ class YFTetrisSceneView: UIView {
     // 正在 移动的 方块
     let viewMovingModel:YFTetrisMovingSceneDataModel = YFTetrisMovingSceneDataModel()
     
-    let column:Int = 6 // 6列
-    let row:Int = 10   // 7 行
+    var column:Int = 6 // 6列
+    var row:Int = 10   // 7 行
     
     var timer:Timer!
     
@@ -30,8 +30,9 @@ class YFTetrisSceneView: UIView {
     }
     
     func creatSecenView() {
+        viewMovingModel.beginXX = column / 2
         weak var weakS = self
-        timer = Timer.YF_scheduledTimerWithTimeInterval(0.5, closure: {
+        timer = Timer.YF_scheduledTimerWithTimeInterval(0.2, closure: {
             weakS?.nextStepGame()
         }, repeats: true)
         
@@ -98,6 +99,8 @@ class YFTetrisSceneView: UIView {
     }
     // 检查是否 到 最后，
     func checkIsBottomed() {
+    
+        
         // 检查已经被占用的方块和 正在移动的方块 有没有 相邻
             for closeViewOfMoving in self.viewMovingModel.dataViewArray
             {
@@ -119,9 +122,18 @@ class YFTetrisSceneView: UIView {
     }
     func needSettingWhenisBottom()
     {
+        // 首先检测有没有失败
+        for closeViewOfMoving in self.viewMovingModel.dataViewArray
+        {
+            if closeViewOfMoving.yy <= 0 {
+                self.gameOver()
+                return
+            }
+        }
+        
         self.rememberIsBottomedOfMovingModel()
         self.viewMovingModel.removeAllModel()
-        self.viewMovingModel.creatFourCube()
+        self.viewMovingModel.createArcStyle()
     }
     
     func rememberIsBottomedOfMovingModel() {
@@ -136,7 +148,14 @@ class YFTetrisSceneView: UIView {
     }
     
     
-    
+    func gameOver() {
+        
+        self.timer.pauseTimer()
+        
+        let delegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate;
+        
+        UIAlertController.init(title: "失败", message: "完蛋了", preferredStyle: UIAlertControllerStyle.alert).show((delegate.window?.rootViewController)!, sender: nil)
+    }
     
     
 }
