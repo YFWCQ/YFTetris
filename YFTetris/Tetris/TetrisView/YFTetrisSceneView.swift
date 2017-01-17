@@ -9,8 +9,10 @@
 import UIKit
 
 class YFTetrisSceneView: UIView {
+    // 已经沉到 底部的 方块
     let viewDataModel:YFTetrisSceneDataModel = YFTetrisSceneDataModel()
     
+    // 正在 移动的 方块
     let viewMovingModel:YFTetrisMovingSceneDataModel = YFTetrisMovingSceneDataModel()
     
     let column:Int = 6 // 6列
@@ -39,8 +41,12 @@ class YFTetrisSceneView: UIView {
         let height = frame.size.height / CGFloat(row)
         
         for i in 0..<column*row {
-            let view = self.sceneViewYF(index: i, frame: CGRect(x: width * CGFloat((i % column)), y: height * CGFloat((i / column)), width: width, height: height))
+            let xx = i % column
+            let yy = i / column
+            let view = self.sceneViewYF(index: i, frame: CGRect(x: width * CGFloat(xx), y: height * CGFloat(yy), width: width, height: height))
             view.empty()
+            view.xx = xx
+            view.yy = yy
             viewDataModel.sceneViewArray.append(view)
             self.addSubview(view)
         }
@@ -66,6 +72,7 @@ class YFTetrisSceneView: UIView {
         self.clearAllfillView()
         self.viewMovingModel.downOneStep()
         self.fillAllfillView()
+        self.checkIsBottomed()
     }
     
     func clearAllfillView() {
@@ -76,6 +83,7 @@ class YFTetrisSceneView: UIView {
                 view.empty()
             }
         }
+        self.viewMovingModel.dataViewArray.removeAll()
     }
     
     func fillAllfillView() {
@@ -84,7 +92,51 @@ class YFTetrisSceneView: UIView {
             if arrayXX >= 0  && self.viewDataModel.sceneViewArray.count > arrayXX{
                 let view = self.viewDataModel.sceneViewArray[arrayXX]
                 view.fill()
+                self.viewMovingModel.dataViewArray.append(view)
             }
         }
     }
+    // 检查是否 到 最后，
+    func checkIsBottomed() {
+        // 检查已经被占用的方块和 正在移动的方块 有没有 相邻
+            for closeViewOfMoving in self.viewMovingModel.dataViewArray
+            {
+                for closeView in self.viewDataModel.sceneCloseArray {
+                    if closeView.yy - closeViewOfMoving.yy <= 1 && closeView.xx == closeViewOfMoving.xx {
+                        self.needSettingWhenisBottom()
+                        return
+                    }
+                }
+            }
+
+        if let model = self.viewMovingModel.dataArray.last
+        {
+            // 是否下落到 不能再下落的 地方了
+            if model.yy == self.row - 1 {
+              self.needSettingWhenisBottom()
+            }
+        }
+    }
+    func needSettingWhenisBottom()
+    {
+        self.rememberIsBottomedOfMovingModel()
+        self.viewMovingModel.removeAllModel()
+        self.viewMovingModel.creatFourCube()
+    }
+    
+    func rememberIsBottomedOfMovingModel() {
+        for model in self.viewMovingModel.dataArray {
+            let arrayXX = model.xx + model.yy * column
+            if arrayXX >= 0  && self.viewDataModel.sceneViewArray.count > arrayXX{
+                let view = self.viewDataModel.sceneViewArray[arrayXX]
+               
+                self.viewDataModel.sceneCloseArray.append(view)
+            }
+        }
+    }
+    
+    
+    
+    
+    
 }

@@ -9,11 +9,16 @@
 import UIKit
 
 class YFTetrisCubeView: UIView {
-
+    var isFill:Bool = false
+    var xx:Int = 0
+    var yy:Int = 0
+    
     func fill() {
+        isFill = true
        self.backgroundColor = UIColor.purple
     }
     func empty() {
+        isFill = false
         self.backgroundColor = UIColor.gray
     }
 }

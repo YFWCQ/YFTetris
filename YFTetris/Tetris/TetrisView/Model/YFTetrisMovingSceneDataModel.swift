@@ -22,20 +22,25 @@ class YFTetrisMovingSceneDataModel: NSObject {
     var beginXX:Int = 3
     
     var dataArray:[YFTetrisMovingSceneModel] = []
+    var dataViewArray:[YFTetrisCubeView] = []
     
     // 四个方格的正方形
     func creatFourCube() {
         dataArray.removeAll()
         for i in 0..<4 {
-            let model = YFTetrisMovingSceneModel(x: beginXX + i % 2, y: -1 + i / 2)
+            let model = YFTetrisMovingSceneModel(x: beginXX + i % 2, y: -2 + i / 2)
             dataArray.append(model)
         }
     }
     
     func createArcStyle(){
-     self.dataArray.removeAll()
      self.creatFourCube()
     }
+    func removeAllModel(){
+        self.dataArray.removeAll()
+        self.dataViewArray.removeAll()
+    }
+    
     
 //MARK: - 移动 方法
     // 下移动 1 步
